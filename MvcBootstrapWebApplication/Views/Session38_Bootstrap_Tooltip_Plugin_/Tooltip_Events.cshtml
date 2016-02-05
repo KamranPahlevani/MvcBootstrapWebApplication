@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Tooltip_Events";
+}
+
+<h2>Tooltip_Events</h2>
+
+<h4>Tooltip examples for anchors</h4>
+This is a <a href="#" class="tooltip-show" data-toggle="tooltip"
+             title="Default Tooltip">
+    Default Tooltip
+</a>.
+<script>
+    $(function () { $('.tooltip-show').tooltip('show'); });
+    $(function () {
+        $('.tooltip-show').on('show.bs.tooltip', function () {
+            alert("Alert  message on show");
+        })
+    });
+</script>

@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Popover_Events";
+}
+
+<h2>Popover_Events</h2>
+
+<div clas="container" style="padding: 100px 50px 10px;">
+    <button type="button" class="btn btn-primary popover-show"
+            title="Popover title" data-container="body"
+            data-toggle="popover"
+            data-content="Some content in Popover with show method">
+        Popover on left
+    </button>
+</div>
+<script>
+    $(function () { $('.popover-show').popover('show'); });
+    $(function () {
+        $('.popover-show').on('shown.bs.popover', function () {
+            alert("Alert message on show");
+        })
+    });
+</script>

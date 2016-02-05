@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Collapse_Events";
+}
+
+<h2>Collapse_Events</h2>
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseexample">
+                    Click me to exapand. Click me again to collapse. Section --shown event
+                </a>
+            </h4>
+        </div>
+        <div id="collapseexample" class="panel-collapse collapse">
+            <div class="panel-body">
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                cred nesciunt sapiente ea proident.
+                Ad vegan excepteur butcher vice lomo.
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $('#collapseexample').on('show.bs.collapse', function () {
+            alert('Hey, this alert shows up when you expand it');
+        })
+    });
+</script>

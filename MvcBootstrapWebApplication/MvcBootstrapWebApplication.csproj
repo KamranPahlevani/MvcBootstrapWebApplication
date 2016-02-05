@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCCB1EBD-ACD6-43D8-AB46-26ABC1BB4073}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvcBootstrapWebApplication</RootNamespace>
+    <AssemblyName>MvcBootstrapWebApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Scrollable.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\cat.jpg" />
+    <Content Include="Images\fullSize.png" />
+    <Content Include="Images\slide1.png" />
+    <Content Include="Images\slide2.png" />
+    <Content Include="Images\slide3.png" />
+    <Content Include="Images\smallSize.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Session3_Bootstrap_Grid_System_\Stacked_to_horizontal.cshtml" />
+    <Content Include="Views\Session3_Bootstrap_Grid_System_\Medium_and_Large_Device.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Session18_Bootstrap_Navigation_Elements_Controller.cs" />
+    <Compile Include="Controllers\Session10_Bootstrap_Images_Controller.cs" />
+    <Compile Include="Controllers\Session11_Bootstrap_Helper_Class_Controller.cs" />
+    <Compile Include="Controllers\Session12_Bootstrap_Responsive_Utilities_Controller.cs" />
+    <Compile Include="Controllers\Session13_Bootstrap_Glyphicon_Controller.cs" />
+    <Compile Include="Controllers\Session14_Bootstrap_Dropdowns_Controller.cs" />
+    <Compile Include="Controllers\Session15_Bootstrap_Button_Group_Controller.cs" />
+    <Compile Include="Controllers\Session16_Bootstrap_Button_dropdowns_Controller.cs" />
+    <Compile Include="Controllers\Session17_Bootstrap_Input_Groups_Controller.cs" />
+    <Compile Include="Controllers\Session19_Bootstrap_Navbar_Controller.cs" />
+    <Compile Include="Controllers\Session20_Bootstrap_Breadcrumb_Controller.cs" />
+    <Compile Include="Controllers\Session21_Bootstrap_Pagination_Controller.cs" />
+    <Compile Include="Controllers\Session22_Bootstrap_Labels_Controller.cs" />
+    <Compile Include="Controllers\Session23_Bootstrap_Badges_Controller.cs" />
+    <Compile Include="Controllers\Session24_Bootstrap_Jumbotron_Controller.cs" />
+    <Compile Include="Controllers\Session25_Bootstrap_Page_Header_Controller.cs" />
+    <Compile Include="Controllers\Session26_Bootstrap_Thumbnails_Controller.cs" />
+    <Compile Include="Controllers\Session27_Bootstrap_Alerts_Controller.cs" />
+    <Compile Include="Controllers\Session28_Bootstrap_Progress_Bars_Controller.cs" />
+    <Compile Include="Controllers\Session29_Bootstrap_Media_Object_Controller.cs" />
+    <Compile Include="Controllers\Session30_Bootstrap_List_Group_Controller.cs" />
+    <Compile Include="Controllers\Session31_Bootstrap_Panels_Controller.cs" />
+    <Compile Include="Controllers\Session32_Bootstrap_Wells_Controller.cs" />
+    <Compile Include="Controllers\Session34_Bootstrap_Modal_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session35_Bootstrap_Dropdown_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session36_Bootstrap_Scrollspy_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session37_Bootstrap_Tab_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session38_Bootstrap_Tooltip_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session39_Bootstrap_Popover_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session40_Bootstrap_Alert_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session41_Bootstrap_Button_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session42_Bootstrap_Collapse_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session43_Bootstrap_Carousel_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session44_Bootstrap_Affix_Plugin_Controller.cs" />
+    <Compile Include="Controllers\Session5_Bootstrap_Typograph_Controller.cs" />
+    <Compile Include="Controllers\Session4_Bootstrap_CSS_Overview_Controller.cs" />
+    <Compile Include="Controllers\Session3_Bootstrap_Grid_System_Controller.cs" />
+    <Compile Include="Controllers\Session6_Bootstrap_Code_Controller.cs" />
+    <Compile Include="Controllers\Session7_Bootstrap_Tables_Controller.cs" />
+    <Compile Include="Controllers\Session8_Bootstrap_Form_Controller.cs" />
+    <Compile Include="Controllers\Session9_Bootstarp_Buttons_Controller.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\Session3_Bootstrap_Grid_System_\Mobile_Tablet_Desktops.cshtml" />
+    <Content Include="Views\Session3_Bootstrap_Grid_System_\Responsive_column_resets.cshtml" />
+    <Content Include="Views\Session3_Bootstrap_Grid_System_\Offset_columns.cshtml" />
+    <Content Include="Views\Session3_Bootstrap_Grid_System_\Nesting_columns.cshtml" />
+    <Content Include="Views\Session3_Bootstrap_Grid_System_\Column_ordering.cshtml" />
+    <Content Include="Views\Session4_Bootstrap_CSS_Overview_\HTML5_doctype.cshtml" />
+    <Content Include="Views\Session4_Bootstrap_CSS_Overview_\Mobile_First.cshtml" />
+    <Content Include="Views\Session4_Bootstrap_CSS_Overview_\Prevent_Mobile_User_Scalable.cshtml" />
+    <Content Include="Views\Session4_Bootstrap_CSS_Overview_\Responsive_images.cshtml" />
+    <Content Include="Views\Session5_Bootstrap_Typograph_\Headings.cshtml" />
+    <Content Include="Views\Session5_Bootstrap_Typograph_\Inline_Subheadings.cshtml" />
+    <Content Include="Views\Session5_Bootstrap_Typograph_\Lead_Body_Copy.cshtml" />
+    <Content Include="Views\Session5_Bootstrap_Typograph_\Emphasis.cshtml" />
+    <Content Include="Views\Session5_Bootstrap_Typograph_\Abbrevations.cshtml" />
+    <Content Include="Views\Session5_Bootstrap_Typograph_\Addresses.cshtml" />
+    <Content Include="Views\Session5_Bootstrap_Typograph_\Blockquotes.cshtml" />
+    <Content Include="Views\Session5_Bootstrap_Typograph_\Lists.cshtml" />
+    <Content Include="Views\Session6_Bootstrap_Code_\Bootstrap_Code.cshtml" />
+    <Content Include="Views\Session7_Bootstrap_Tables_\Basic_Table.cshtml" />
+    <Content Include="Views\Session7_Bootstrap_Tables_\Striped_Tables.cshtml" />
+    <Content Include="Views\Session7_Bootstrap_Tables_\Bordered_Table.cshtml" />
+    <Content Include="Views\Session7_Bootstrap_Tables_\Hover_Table.cshtml" />
+    <Content Include="Views\Session7_Bootstrap_Tables_\Condensed_Table.cshtml" />
+    <Content Include="Views\Session7_Bootstrap_Tables_\Contextual_Classes.cshtml" />
+    <Content Include="Views\Session7_Bootstrap_Tables_\Responsive_Tables.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Vertical_Form.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Inline_Form.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Horizontal_Form.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Input.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Textarea.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Checkboxes_and_Radios.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Selects.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Static_Control.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Form_Controls_State.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Form_Controls_Size.cshtml" />
+    <Content Include="Views\Session8_Bootstrap_Form_\Help_Text.cshtml" />
+    <Content Include="Views\Session9_Bootstarp_Buttons_\Button_Classes.cshtml" />
+    <Content Include="Views\Session9_Bootstarp_Buttons_\Button_Sizes.cshtml" />
+    <Content Include="Views\Session9_Bootstarp_Buttons_\Active_State.cshtml" />
+    <Content Include="Views\Session9_Bootstarp_Buttons_\Deactive_Button.cshtml" />
+    <Content Include="Views\Session9_Bootstarp_Buttons_\Button_Tags.cshtml" />
+    <Content Include="Views\Session10_Bootstrap_Images_\Image_Classes.cshtml" />
+    <Content Include="Views\Session11_Bootstrap_Helper_Class_\Close_Icon.cshtml" />
+    <Content Include="Views\Session11_Bootstrap_Helper_Class_\Carets.cshtml" />
+    <Content Include="Views\Session11_Bootstrap_Helper_Class_\Quick_floats.cshtml" />
+    <Content Include="Views\Session11_Bootstrap_Helper_Class_\Center_Content_Blocks.cshtml" />
+    <Content Include="Views\Session11_Bootstrap_Helper_Class_\Clearfix.cshtml" />
+    <Content Include="Views\Session11_Bootstrap_Helper_Class_\Showing_and_Hiding_Content.cshtml" />
+    <Content Include="Views\Session11_Bootstrap_Helper_Class_\Screen_reader_content.cshtml" />
+    <Content Include="Views\Session12_Bootstrap_Responsive_Utilities_\Responsive_Utilities_Classes.cshtml" />
+    <Content Include="Views\Session13_Bootstrap_Glyphicon_\Bootstrap_Glyphicon.cshtml" />
+    <Content Include="Views\Session14_Bootstrap_Dropdowns_\Create_Dropdown.cshtml" />
+    <Content Include="Views\Session14_Bootstrap_Dropdowns_\Alignment.cshtml" />
+    <Content Include="Views\Session14_Bootstrap_Dropdowns_\Headers.cshtml" />
+    <Content Include="Views\Session15_Bootstrap_Button_Group_\Basic_Button_Groups.cshtml" />
+    <Content Include="Views\Session15_Bootstrap_Button_Group_\Button_Toolbar.cshtml" />
+    <Content Include="Views\Session15_Bootstrap_Button_Group_\Button_Size.cshtml" />
+    <Content Include="Views\Session15_Bootstrap_Button_Group_\Nesting.cshtml" />
+    <Content Include="Views\Session15_Bootstrap_Button_Group_\Vertical_Button_Group.cshtml" />
+    <Content Include="Views\Session16_Bootstrap_Button_dropdowns_\Create_Button_dropdowns.cshtml" />
+    <Content Include="Views\Session16_Bootstrap_Button_dropdowns_\Split_Button_Dropdowns.cshtml" />
+    <Content Include="Views\Session16_Bootstrap_Button_dropdowns_\Button_Dropdown_Size.cshtml" />
+    <Content Include="Views\Session16_Bootstrap_Button_dropdowns_\Dropup_Variation.cshtml" />
+    <Content Include="Views\Session17_Bootstrap_Input_Groups_\Basic_Input_Group.cshtml" />
+    <Content Include="Views\Session17_Bootstrap_Input_Groups_\Input_Group_Sizing.cshtml" />
+    <Content Include="Views\Session17_Bootstrap_Input_Groups_\Checkboxes_and_Radio_Addons.cshtml" />
+    <Content Include="Views\Session17_Bootstrap_Input_Groups_\Button_Addons.cshtml" />
+    <Content Include="Views\Session17_Bootstrap_Input_Groups_\Buttons_with_Dropdown.cshtml" />
+    <Content Include="Views\Session17_Bootstrap_Input_Groups_\Segmented_Buttons.cshtml" />
+    <Content Include="Views\Session18_Bootstrap_Navigation_Elements_\Tabular_Navigation_and_Tabs.cshtml" />
+    <Content Include="Views\Session18_Bootstrap_Navigation_Elements_\Basic_Pills.cshtml" />
+    <Content Include="Views\Session18_Bootstrap_Navigation_Elements_\Verticle_Pills.cshtml" />
+    <Content Include="Views\Session18_Bootstrap_Navigation_Elements_\Justifide_Nav.cshtml" />
+    <Content Include="Views\Session18_Bootstrap_Navigation_Elements_\Disabled_Links.cshtml" />
+    <Content Include="Views\Session18_Bootstrap_Navigation_Elements_\Tabs_with_Dropdowns.cshtml" />
+    <Content Include="Views\Session18_Bootstrap_Navigation_Elements_\Pills_with_Dropdowns.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Default_Navbar.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Responsive_Navbar.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Forms_in_navbar.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Buttons_in_navbar.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Text_in_navbar.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Non_nav_Links.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Component_Alignment.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Fixed_to_top.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Fixed_to_bottom.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Static_top.cshtml" />
+    <Content Include="Views\Session19_Bootstrap_Navbar_\Inverted_navbar.cshtml" />
+    <Content Include="Views\Session20_Bootstrap_Breadcrumb_\Create_Breadcrumb.cshtml" />
+    <Content Include="Views\Session21_Bootstrap_Pagination_\Default_Pagination.cshtml" />
+    <Content Include="Views\Session21_Bootstrap_Pagination_\Pagination_States.cshtml" />
+    <Content Include="Views\Session21_Bootstrap_Pagination_\Pagination_Size.cshtml" />
+    <Content Include="Views\Session21_Bootstrap_Pagination_\Default_Pager.cshtml" />
+    <Content Include="Views\Session21_Bootstrap_Pagination_\Pager_Aligned_Links.cshtml" />
+    <Content Include="Views\Session21_Bootstrap_Pagination_\Pager_States.cshtml" />
+    <Content Include="Views\Session22_Bootstrap_Labels_\Create_Labels.cshtml" />
+    <Content Include="Views\Session22_Bootstrap_Labels_\Label_Types.cshtml" />
+    <Content Include="Views\Session23_Bootstrap_Badges_\Create_Badges.cshtml" />
+    <Content Include="Views\Session23_Bootstrap_Badges_\Active_nav_state.cshtml" />
+    <Content Include="Views\Session24_Bootstrap_Jumbotron_\Create_Jumbotron.cshtml" />
+    <Content Include="Views\Session24_Bootstrap_Jumbotron_\Jumbotron_FullPage.cshtml" />
+    <Content Include="Views\Session25_Bootstrap_Page_Header_\Create_Page_Header.cshtml" />
+    <Content Include="Views\Session26_Bootstrap_Thumbnails_\Create_Thumbnail.cshtml" />
+    <Content Include="Views\Session26_Bootstrap_Thumbnails_\Thumbnail_With_Content.cshtml" />
+    <Content Include="Views\Session27_Bootstrap_Alerts_\Create_Alerts.cshtml" />
+    <Content Include="Views\Session27_Bootstrap_Alerts_\Dismissal_Alerts.cshtml" />
+    <Content Include="Views\Session27_Bootstrap_Alerts_\Links_in_Alerts.cshtml" />
+    <Content Include="Views\Session28_Bootstrap_Progress_Bars_\Default_Progress_Bar.cshtml" />
+    <Content Include="Views\Session28_Bootstrap_Progress_Bars_\Alternate_Progress_Bar.cshtml" />
+    <Content Include="Views\Session28_Bootstrap_Progress_Bars_\Striped_Progress_Bar.cshtml" />
+    <Content Include="Views\Session28_Bootstrap_Progress_Bars_\Animated_Progress_Bar.cshtml" />
+    <Content Include="Views\Session28_Bootstrap_Progress_Bars_\Stacked_Progress_Bar.cshtml" />
+    <Content Include="Views\Session29_Bootstrap_Media_Object_\Ceate_Media.cshtml" />
+    <Content Include="Views\Session29_Bootstrap_Media_Object_\Media_List.cshtml" />
+    <Content Include="Views\Session30_Bootstrap_List_Group_\Default_List_Group.cshtml" />
+    <Content Include="Views\Session30_Bootstrap_List_Group_\Add_Badges_To_List_Group.cshtml" />
+    <Content Include="Views\Session30_Bootstrap_List_Group_\Linking_List_Group_Items.cshtml" />
+    <Content Include="Views\Session30_Bootstrap_List_Group_\Add_Content_To_List_Group.cshtml" />
+    <Content Include="Views\Session31_Bootstrap_Panels_\Create_Default_Panel.cshtml" />
+    <Content Include="Views\Session31_Bootstrap_Panels_\Panel_with_Heading.cshtml" />
+    <Content Include="Views\Session31_Bootstrap_Panels_\Panel_with_Footer.cshtml" />
+    <Content Include="Views\Session31_Bootstrap_Panels_\Panel_Contextual_Alternatives.cshtml" />
+    <Content Include="Views\Session31_Bootstrap_Panels_\Panel_with_Tables.cshtml" />
+    <Content Include="Views\Session31_Bootstrap_Panels_\Panel_with_List_Group.cshtml" />
+    <Content Include="Views\Session32_Bootstrap_Wells_\Create_Well.cshtml" />
+    <Content Include="Views\Session32_Bootstrap_Wells_\Well_Sizing.cshtml" />
+    <Content Include="Views\Session34_Bootstrap_Modal_Plugin_\Create_Modal.cshtml" />
+    <Content Include="Views\Session34_Bootstrap_Modal_Plugin_\Modal_Methods.cshtml" />
+    <Content Include="Views\Session34_Bootstrap_Modal_Plugin_\Modal_Events.cshtml" />
+    <Content Include="Views\Session35_Bootstrap_Dropdown_Plugin_\Create_DropDown.cshtml" />
+    <Content Include="Views\Session35_Bootstrap_Dropdown_Plugin_\DropDown_In_Navbar.cshtml" />
+    <Content Include="Views\Session35_Bootstrap_Dropdown_Plugin_\DropDown_In_Tab.cshtml" />
+    <Content Include="Views\Session35_Bootstrap_Dropdown_Plugin_\DropDown_Methods.cshtml" />
+    <Content Include="Views\Session36_Bootstrap_Scrollspy_Plugin_\Create_Scrollspy.cshtml" />
+    <Content Include="Views\Session36_Bootstrap_Scrollspy_Plugin_\Scrollspy_Methods.cshtml" />
+    <Content Include="Views\Session36_Bootstrap_Scrollspy_Plugin_\Scrollspy_Events.cshtml" />
+    <Content Include="Views\Session37_Bootstrap_Tab_Plugin_\Create_Tab.cshtml" />
+    <Content Include="Views\Session37_Bootstrap_Tab_Plugin_\Tab_Methods.cshtml" />
+    <Content Include="Views\Session37_Bootstrap_Tab_Plugin_\Tab_Events.cshtml" />
+    <Content Include="Views\Session38_Bootstrap_Tooltip_Plugin_\Create_Tooltip.cshtml" />
+    <Content Include="Views\Session38_Bootstrap_Tooltip_Plugin_\Tooltip_Methods.cshtml" />
+    <Content Include="Views\Session38_Bootstrap_Tooltip_Plugin_\Tooltip_Events.cshtml" />
+    <Content Include="Views\Session39_Bootstrap_Popover_Plugin_\Create_Popover.cshtml" />
+    <Content Include="Views\Session39_Bootstrap_Popover_Plugin_\Popover_Methods.cshtml" />
+    <Content Include="Views\Session39_Bootstrap_Popover_Plugin_\Popover_Events.cshtml" />
+    <Content Include="Views\Session40_Bootstrap_Alert_Plugin_\Create_Alert.cshtml" />
+    <Content Include="Views\Session40_Bootstrap_Alert_Plugin_\Alert_Methods.cshtml" />
+    <Content Include="Views\Session40_Bootstrap_Alert_Plugin_\Alert_Events.cshtml" />
+    <Content Include="Views\Session41_Bootstrap_Button_Plugin_\Loading_State.cshtml" />
+    <Content Include="Views\Session41_Bootstrap_Button_Plugin_\Single_Toggle.cshtml" />
+    <Content Include="Views\Session41_Bootstrap_Button_Plugin_\Checkbox.cshtml" />
+    <Content Include="Views\Session41_Bootstrap_Button_Plugin_\Radio.cshtml" />
+    <Content Include="Views\Session41_Bootstrap_Button_Plugin_\Button_Methods.cshtml" />
+    <Content Include="Views\Session42_Bootstrap_Collapse_Plugin_\Create_Collapse_With_accordion.cshtml" />
+    <Content Include="Views\Session42_Bootstrap_Collapse_Plugin_\Create_Collapse_Without_accordion.cshtml" />
+    <Content Include="Views\Session42_Bootstrap_Collapse_Plugin_\Collapse_Methods.cshtml" />
+    <Content Include="Views\Session42_Bootstrap_Collapse_Plugin_\Collapse_Events.cshtml" />
+    <Content Include="Views\Session43_Bootstrap_Carousel_Plugin_\Simple_Slider.cshtml" />
+    <Content Include="Views\Session43_Bootstrap_Carousel_Plugin_\Optional_Captions.cshtml" />
+    <Content Include="Views\Session43_Bootstrap_Carousel_Plugin_\Carousel_Methods.cshtml" />
+    <Content Include="Views\Session43_Bootstrap_Carousel_Plugin_\Carousel_Events.cshtml" />
+    <Content Include="Views\Session44_Bootstrap_Affix_Plugin_\Create_Affix_Via_Data_Attribute.cshtml" />
+    <Content Include="Views\Session44_Bootstrap_Affix_Plugin_\Create_Affix_Via_Data_JavaScript.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Session23_BootstrapBadges\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11369</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11350/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
