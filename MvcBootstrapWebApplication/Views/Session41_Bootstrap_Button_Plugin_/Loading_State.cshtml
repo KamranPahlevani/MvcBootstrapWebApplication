@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Loading_State";
+}
+
+<h2>Loading_State</h2>
+
+<button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..."
+        type="button">
+    Loading state
+</button>
+<script>
+    $(function () {
+        $(".btn").click(function () {
+            $(this).button('loading').delay(1000).queue(function () {
+                 $(this).button('reset');
+            });
+        });
+    });
+</script>

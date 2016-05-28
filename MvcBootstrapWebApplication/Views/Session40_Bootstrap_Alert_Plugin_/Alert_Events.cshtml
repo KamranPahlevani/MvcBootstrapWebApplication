@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Alert_Events";
+}
+
+<h2>Alert_Events</h2>
+
+<div id="myAlert" class="alert alert-success">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>Success!</strong> the result is successful.
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#myAlert").bind('closed.bs.alert', function () {
+            alert("Alert message box is closed.");
+        });
+    });
+</script>

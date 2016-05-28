@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Popover_Methods";
+}
+
+<h2>Popover_Methods</h2>
+
+<div class="container" style="padding: 100px 50px 10px;">
+    <button type="button" class="btn btn-default popover-show"
+            title="Popover title" data-container="body" data-toggle="popover" data-placement="left"
+            data-content="Some content in Popover with show method">
+        Popover on left
+    </button>
+    <button type="button" class="btn btn-primary popover-hide" title="Popover title"
+            data-container="body"
+            data-toggle="popover" data-placement="top"
+            data-content="Some content in Popover-hide method">
+        Popover on top
+    </button>
+    <button type="button" class="btn btn-success popover-destroy"
+            title="Popover title" data-container="body"
+            data-toggle="popover" data-placement="bottom"
+            data-content="Some content in Popover-destroy method">
+        Popover on bottom
+    </button>
+    <button type="button" class="btn btn-warning popover-toggle"
+            title="Popover title" data-container="body"
+            data-toggle="popover" data-placement="top"
+            data-content="Some content in Popover-toggle method">
+        Popover on right
+    </button><br><br><br><br><br><br>
+    <p class="popover-options">
+        <a href="#" type="button" class="btn btn-warning" title="<h2>Title</h2>"data-container="body" data-toggle="popover" data-content="<h4>Some content in Popover-options method</h4>">Popover
+        </a>
+    </p>
+    <script>
+        $(function () { $('.popover-show').popover('show'); });
+        $(function () { $('.popover-hide').popover('hide'); });
+        $(function () { $('.popover-destroy').popover('destroy'); });
+        $(function () { $('.popover-toggle').popover('toggle'); });
+        $(function () { $(".popover-options a").popover({ html: true }); });
+    </script>
+</div>
